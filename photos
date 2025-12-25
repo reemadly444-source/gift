@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Memory Album</title>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Quicksand:wght@300;500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background: #fdf2f4;
+            font-family: 'Quicksand', sans-serif;
+            color: #4a4a4a;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        h1 {
+            font-family: 'Dancing Script', cursive;
+            font-size: 3rem;
+            color: #d63384;
+            margin-top: 20px;
+        }
+
+        .timeline {
+            max-width: 800px;
+            width: 100%;
+            margin-bottom: 80px; /* Space for footer */
+        }
+
+        .memory-section {
+            background: white;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+
+        .memory-text {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 15px;
+            color: #d63384;
+            text-align: left;
+            border-left: 3px solid #ff9a9e;
+            padding-left: 10px;
+        }
+
+        .image-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        .image-container img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            display: block;
+        }
+
+        footer {
+            background-color: #1a2f4a;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            left: 0;
+        }
+
+        footer a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Our Memories</h1>
+
+    <div class="timeline">
+        
+        <div class="memory-section">
+            <p class="memory-text">This is the app we first talked in and also our first matching wallpaper.</p>
+            <div class="image-container">
+                <img src="image/app.jpg" alt="The App">
+                <img src="image/match.jpg" alt="First Matching Photo">
+            </div>
+        </div>
+
+        <div class="memory-section">
+            <p class="memory-text">This is our second matching photo and my favourite, actually, and the puzzle we made together.</p>
+            <div class="image-container">
+                <img src="image/match2.jpg" alt="Favorite Matching Photo">
+                <img src="image/puzzle.jpg" alt="Our Puzzle">
+            </div>
+        </div>
+
+        <div class="memory-section">
+            <p class="memory-text">This is our first Discord call after confessing and your snap account when you became my bestfriend.</p>
+            <div class="image-container">
+                <img src="image/call.jpg" alt="First Call">
+                <img src="image/first.jpg" alt="First Friend Connection">
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <a href="index.html">Home</a>
+        <a href="album.html">Pictures</a>
+        <a href="secret.html">Secret</a>
+    </footer>
+
+</body>
+</html>
